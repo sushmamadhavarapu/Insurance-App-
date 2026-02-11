@@ -3,12 +3,12 @@ import numpy as np
 import pickle
 
 # Load model
-with open("model_RFR.pkl", "rb") as f:
+with open("New_RFmodel.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Load scaler if used
 try:
-    with open("scalar.pkl", "rb") as f:
+    with open("New_scalar.pkl", "rb") as f:
         scaler = pickle.load(f)
 except:
     scaler = None
